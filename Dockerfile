@@ -1,5 +1,5 @@
 FROM williamyeh/ansible:alpine3-onbuild
-MAINTAINER "Neel Shah <shah.neel@nyu.edu>"
+MAINTAINER "Neel Shah <neel@hostpaas.io>"
 
 ENV TERRAFORM_VERSION=0.10.6
 
