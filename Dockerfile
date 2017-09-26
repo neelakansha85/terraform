@@ -3,6 +3,9 @@ MAINTAINER "Neel Shah <neel@hostpaas.io>"
 
 ENV TERRAFORM_VERSION=0.10.6
 
+RUN apk --update add --no-cache \
+		openssh
+
 # Install Terraform
 RUN wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
