@@ -3,7 +3,8 @@ FROM alpine:3.6
 MAINTAINER "Neel Shah <neel@hostpaas.io>"
 
 ENV TERRAFORM_VERSION=0.11.7
-ENV ANSIBLE_VERSION=2.4.2
+ENV ANSIBLE_VERSION=2.0.0
+ENV BOTO_VERSION=2.39.0
 
 RUN echo "===> Installing Python..." && \
 	apk --update add python \
@@ -19,6 +20,7 @@ RUN echo "===> Installing Python..." && \
 	\
 	echo "===> Installing Ansible and Boto Library..." && \
 	pip install ansible==${ANSIBLE_VERSION} && \
+	pip install boto==${BOTO_VERSION} && \
 	\
 	apk del .build-deps && \
 	rm -rf /var/cache/apk/* && \
