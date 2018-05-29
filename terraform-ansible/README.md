@@ -7,6 +7,6 @@ In addition the image has no entrypoint, except displaying the current terraform
 entrypoint: sh -c 'terraform init && terraform apply'
 
 Current Dependencies or version supported:
-Ansible 2.0.0
+Ansible 2.4.2
 Terraform 0.11.7
-Boto 2.39.0
+Boto 2.48.0
