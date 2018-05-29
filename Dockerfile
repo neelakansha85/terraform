@@ -25,6 +25,9 @@ RUN echo "===> Installing Python..." && \
 	apk del .build-deps && \
 	rm -rf /var/cache/apk/* && \
 	\
+	echo "===> Installing OpenSSH Client..." && \
+	apk --update add openssh-client && \
+	\
 	echo "===> Adding localhost to hosts file..." && \
 	mkdir -p /etc/ansible && \
 	echo 'localhost' > /etc/ansible/hosts && \
