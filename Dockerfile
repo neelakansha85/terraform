@@ -36,6 +36,9 @@ RUN echo "===> Installing Python..." && \
 	wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
 	\
 	unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /usr/local/bin && \
-	rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+	rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
+	\
+	echo "===> Installing Git..." && \
+	apk --update add git
 
 ENTRYPOINT ["sh", "-c", "terraform -v && ansible --version"]
