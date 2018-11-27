@@ -3,8 +3,8 @@ FROM alpine:3.8
 MAINTAINER "Neel Shah <neel@hostpaas.io>"
 
 ENV TERRAFORM_VERSION=0.11.8
-ENV ANSIBLE_VERSION=2.4.*
-ENV BOTO_VERSION=2.48.*
+ENV ANSIBLE_VERSION=2.0.0
+ENV BOTO_VERSION=2.39.0
 
 RUN echo "===> Installing Python..." && \
 	apk --update add python \
