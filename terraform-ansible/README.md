@@ -8,5 +8,5 @@ entrypoint: sh -c 'terraform init && terraform apply'
 
 Current Dependencies or version supported:
 Ansible 2.4.2
-Terraform 0.11.7
+Terraform 0.11.13
 Boto 2.48.0

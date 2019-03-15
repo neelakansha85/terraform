@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 MAINTAINER "Neel Shah <neel@hostpaas.io>"
 
-ENV TERRAFORM_VERSION=0.11.8
+ENV TERRAFORM_VERSION=0.11.13
 
 RUN apk --update add openssl wget && \
 	\

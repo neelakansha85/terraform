@@ -7,4 +7,4 @@ In addition the image has no entrypoint, except displaying the current terraform
 entrypoint: sh -c 'terraform init && terraform apply -auto-approve'
 
 Current Dependencies or version supported:
-Terraform 0.11.8
+Terraform 0.11.13
